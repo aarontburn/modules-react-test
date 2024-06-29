@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+
+    <!-- References a global style. -->
+    <!-- @css -->
+    <link rel="stylesheet" href="../../colors.css">
+
+    <!-- Modify this for the name to the name of your CSS file. -->
+    <link rel="stylesheet" href="{ModuleName}Styles.css">
+
+    <!-- Note: This script tag NEEDS to stay a single line. -->
+    <!-- @renderer -->
+    <script defer src="../../dist/sample_module/{ModuleName}Renderer.js"></script>
+
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="example-contents">
+            <!-- For simplicity, put contents in here. -->
+            <h1 style="margin-top: 15px; color: var(--accent-color)">Modules: Template</h1>
+
+            <div id="no-signal-div">
+                <h1>ERROR: NO SIGNAL FROM PROCESS</h1>
+                <br />
+                <h2>Verify the 'MODULE_ID' variable matches in both the process and renderer.</h2>
+                <h2 id="no-signal-id">MODULE_ID:</h2>
+
+                <br /><br />
+                <h2>The process should display an error in the console.</h2>
+
+            </div>
+
+            <div id='successful' style="display: flex; flex-direction: column; align-items: center; display: none;">
+                <h3>If you see this, you've (probably) <span>successfully</span> setup the template correctly.</h3>
+
+                <div style="display: flex;">
+                    <div class="module-info">
+                        <h3>Your <span>module name</span> is:</h3>
+                        <h2 id="module-name">Sample Module</h2>
+                        <p id='name-default-warning' hidden>
+                            You should probably change it so it isn't the default value.
+                        </p>
+                    </div>
+                    <div class="module-info">
+                        <h3>Your <span>module ID</span> is:</h3>
+                        <h2 id="module-id">developer.Sample_Module</h2>
+                        <p id='id-default-warning' hidden>
+                            You should probably change it so it isn't the default value.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 id='sample-setting'>Sample setting is turned on.</h3>
+                <br />
+                <h2>Here's what your file structure looks like, after compiling:</h2>
+                <div style="display: flex; justify-content: center;">
+                    <table style="width: 65%;">
+                        <tbody id="file-box">
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+/* Put your CSS here! */
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#example-contents {
+    border: 1px solid var(--off-white);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    width: 100%;
+    margin: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.module-info {
+    text-align: center;
+    margin: 50px;
+}
+
+span {
+    color: var(--accent-color);
+}
+
+td {
+    padding: 3px 8px;
+}
+
+.table-left {
+    color: var(--accent-color);
+    display: flex;
+    justify-content: right;
+}
+
+
+td > p {
+    font-size: 18px;
+}
+
+#no-signal-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
