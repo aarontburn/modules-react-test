@@ -32,8 +32,6 @@
             case "load-modules": {
                 const moduleHtml: HTMLElement = document.getElementById("modules");
                 const headerHtml: HTMLElement = document.getElementById("header");
-
-
                 for (const {moduleName, moduleID, htmlPath} of data) {
                     const moduleView: HTMLElement = document.createElement("iframe");
                     moduleView.id = moduleID;

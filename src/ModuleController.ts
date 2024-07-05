@@ -99,7 +99,7 @@ export class ModuleController implements IPCSource {
             })
         });
         this.ipcCallback.notifyRenderer(this, 'load-modules', data);
-        this.swapVisibleModule(HomeProcess.MODULE_ID);
+        // this.swapVisibleModule(HomeProcess.MODULE_ID);
     }
 
     private handleMainEvents(): void {
